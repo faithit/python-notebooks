@@ -1,58 +1,64 @@
 # Python Notebooks
 
-Open any notebook in Google Colab using the links below. The notebooks are stored in this repository; Colab will open the version from the `main` branch.
+Open a notebook in Colab using the links below, or run it locally with JupyterLab.
 
-## Module 1
+## Run locally
 
-| Notebook | Open in Colab |
+1. Install Python 3.
+2. Run `python -m pip install -r requirements.txt`.
+3. Run `jupyter lab` and open a notebook under `notebooks/` or in the repository root.
+
+## Notebook index
+
+### Module 1
+
+| Notebook | Colab |
 |---|---|
-| `40460_Mod01_1.1.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod01_1.1.ipynb) |
-| `40460_Mod01_1.2.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod01_1.2.ipynb) |
-| `40460_Mod01_1.3.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod01_1.3.ipynb) |
-| `40460_Mod01_1.4.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod01_1.4.ipynb) |
-| `40460_Mod01_1.5.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod01_1.5.ipynb) |
-| `40460_Mod01_1.6.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod01_1.6.ipynb) |
-| `40460_Mod01_1.7.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod01_1.7.ipynb) |
-| `40460_Mod01_1.9.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod01_1.9.ipynb) |
-| `40460_Mod01_1_2.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod01_1_2.ipynb) |
-| `40460_Mod01_1_9.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod01_1_9.ipynb) |
-| `40460_Mod01_Practice1a.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod01_Practice1a.ipynb) |
-| `40460_Mod01_Practice1b.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod01_Practice1b.ipynb) |
-| `40460_Mod01_Project1.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod01_Project1.ipynb) |
+| [`Mod01_1.1.ipynb`](Mod01_1.1.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod01_1.1.ipynb) |
+| [`Mod01_1.2.ipynb`](Mod01_1.2.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod01_1.2.ipynb) |
+| [`Mod01_1.3.ipynb`](Mod01_1.3.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod01_1.3.ipynb) |
+| [`Mod01_1.4.ipynb`](Mod01_1.4.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod01_1.4.ipynb) |
+| [`Mod01_1.5.ipynb`](Mod01_1.5.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod01_1.5.ipynb) |
+| [`Mod01_1.6.ipynb`](Mod01_1.6.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod01_1.6.ipynb) |
+| [`Mod01_1.7.ipynb`](Mod01_1.7.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod01_1.7.ipynb) |
+| [`Mod01_1.9.ipynb`](Mod01_1.9.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod01_1.9.ipynb) |
+| [`Mod01_1_2.ipynb`](Mod01_1_2.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod01_1_2.ipynb) |
+| [`Mod01_1_9.ipynb`](Mod01_1_9.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod01_1_9.ipynb) |
+| [`Mod01_Practice1a.ipynb`](Mod01_Practice1a.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod01_Practice1a.ipynb) |
+| [`Mod01_Practice1b.ipynb`](Mod01_Practice1b.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod01_Practice1b.ipynb) |
+| [`Mod01_Project1.ipynb`](Mod01_Project1.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod01_Project1.ipynb) |
 
-## Module 2
+### Module 2
 
-| Notebook | Open in Colab |
+| Notebook | Colab |
 |---|---|
-| `40460_Mod02_2.1.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod02_2.1.ipynb) |
-| `40460_Mod02_2.2.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod02_2.2.ipynb) |
-| `40460_Mod02_2.3.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod02_2.3.ipynb) |
-| `40460_Mod02_Practice2.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod02_Practice2.ipynb) |
-| `40460_Mod02_Project2.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod02_Project2.ipynb) |
+| [`Mod02_2.1.ipynb`](Mod02_2.1.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod02_2.1.ipynb) |
+| [`Mod02_2.2.ipynb`](Mod02_2.2.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod02_2.2.ipynb) |
+| [`Mod02_2.3.ipynb`](Mod02_2.3.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod02_2.3.ipynb) |
+| [`Mod02_Practice2.ipynb`](Mod02_Practice2.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod02_Practice2.ipynb) |
+| [`Mod02_Project2.ipynb`](Mod02_Project2.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod02_Project2.ipynb) |
 
-## Module 3
+### Module 3
 
-| Notebook | Open in Colab |
+| Notebook | Colab |
 |---|---|
-| `40460_Mod03_3.1.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod03_3.1.ipynb) |
-| `40460_Mod03_3.2.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod03_3.2.ipynb) |
-| `40460_Mod03_3.3.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod03_3.3.ipynb) |
-| `40460_Mod03_3.4.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod03_3.4.ipynb) |
-| `40460_Mod03_3.5.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod03_3.5.ipynb) |
-| `40460_Mod03_Practice3a.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod03_Practice3a.ipynb) |
-| `40460_Mod03_Practice3b.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod03_Practice3b.ipynb) |
-| `40460_Mod03_Project3.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod03_Project3.ipynb) |
+| [`Mod03_3.1.ipynb`](Mod03_3.1.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod03_3.1.ipynb) |
+| [`Mod03_3.2.ipynb`](Mod03_3.2.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod03_3.2.ipynb) |
+| [`Mod03_3.3.ipynb`](Mod03_3.3.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod03_3.3.ipynb) |
+| [`Mod03_3.4.ipynb`](Mod03_3.4.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod03_3.4.ipynb) |
+| [`Mod03_3.5.ipynb`](Mod03_3.5.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod03_3.5.ipynb) |
+| [`Mod03_Practice3a.ipynb`](Mod03_Practice3a.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod03_Practice3a.ipynb) |
+| [`Mod03_Practice3b.ipynb`](Mod03_Practice3b.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod03_Practice3b.ipynb) |
+| [`Mod03_Project3.ipynb`](Mod03_Project3.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod03_Project3.ipynb) |
 
-## Module 4
+### Module 4
 
-| Notebook | Open in Colab |
+| Notebook | Colab |
 |---|---|
-| `40460_Mod04_4.1.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod04_4.1.ipynb) |
-| `40460_Mod04_4.2.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod04_4.2.ipynb) |
-| `40460_Mod04_4.3.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod04_4.3.ipynb) |
-| `40460_Mod04_4.4.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod04_4.4.ipynb) |
-| `40460_Mod04_Practice4a.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod04_Practice4a.ipynb) |
-| `40460_Mod04_Practice4b.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod04_Practice4b.ipynb) |
-| `40460_Mod04_Project4.ipynb` | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/40460_Mod04_Project4.ipynb) |
-
-Click **Connect** in Colab to start a runtime, then choose **Runtime → Run all** to run a notebook.
+| [`Mod04_4.1.ipynb`](Mod04_4.1.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod04_4.1.ipynb) |
+| [`Mod04_4.2.ipynb`](Mod04_4.2.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod04_4.2.ipynb) |
+| [`Mod04_4.3.ipynb`](Mod04_4.3.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod04_4.3.ipynb) |
+| [`Mod04_4.4.ipynb`](Mod04_4.4.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod04_4.4.ipynb) |
+| [`Mod04_Practice4a.ipynb`](Mod04_Practice4a.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod04_Practice4a.ipynb) |
+| [`Mod04_Practice4b.ipynb`](Mod04_Practice4b.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod04_Practice4b.ipynb) |
+| [`Mod04_Project4.ipynb`](Mod04_Project4.ipynb) | [Open in Colab](https://colab.research.google.com/github/faithit/python-notebooks/blob/main/Mod04_Project4.ipynb) |
