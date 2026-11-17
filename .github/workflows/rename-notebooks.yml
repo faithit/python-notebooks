@@ -1,0 +1,130 @@
+name: Rename notebooks and add Colab links
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-notebooks:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Rename notebooks and update links
+        run: |
+          python - <<'PY'
+          import json
+          import re
+          from pathlib import Path
+          from urllib.parse import quote
+
+          owner = "faithit"
+          repo = "python-notebooks"
+          branch = "main"
+          root = Path(".")
+
+          notebooks = [
+              p for p in root.rglob("*.ipynb")
+              if ".git" not in p.parts
+          ]
+
+          # Rename notebooks, preserving any folders they are already in.
+          for old_path in notebooks:
+              if old_path.name.startswith("40460_"):
+                  new_path = old_path.with_name(old_path.name.removeprefix("40460_"))
+                  if new_path.exists():
+                      raise FileExistsError(f"Cannot rename: {new_path} already exists")
+                  old_path.rename(new_path)
+
+          notebooks = sorted(
+              (p for p in root.rglob("*.ipynb") if ".git" not in p.parts),
+              key=lambda p: p.as_posix().lower()
+          )
+
+          groups = {}
+          marker = "<!-- COLAB_LINK -->"
+
+          for path in notebooks:
+              notebook = json.loads(path.read_text(encoding="utf-8"))
+              cells = [
+                  cell for cell in notebook.get("cells", [])
+                  if marker not in "".join(cell.get("source", []))
+              ]
+
+              encoded_path = quote(path.as_posix(), safe="/._-")
+              colab_url = (
+                  f"https://colab.research.google.com/github/"
+                  f"{owner}/{repo}/blob/{branch}/{encoded_path}"
+              )
+              cells.insert(0, {
+                  "cell_type": "markdown",
+                  "metadata": {},
+                  "source": [
+                      f"{marker}\n",
+                      f"[Open this notebook in Google Colab]({colab_url})\n",
+                  ],
+              })
+
+              notebook["cells"] = cells
+              path.write_text(
+                  json.dumps(notebook, ensure_ascii=False, indent=1) + "\n",
+                  encoding="utf-8",
+              )
+
+              match = re.search(r"Mod(\d+)", path.name, re.IGNORECASE)
+              group = f"Module {int(match.group(1))}" if match else "Other notebooks"
+              groups.setdefault(group, []).append((path, colab_url))
+
+          lines = [
+              "# Python Notebooks",
+              "",
+              "Open a notebook in Colab using the links below, or run it locally with JupyterLab.",
+              "",
+              "## Run locally",
+              "",
+              "1. Install Python 3.",
+              "2. Run `python -m pip install -r requirements.txt`.",
+              "3. Run `jupyter lab` and open a notebook under `notebooks/` or in the repository root.",
+              "",
+              "## Notebook index",
+              "",
+          ]
+
+          for group in sorted(groups, key=lambda x: (x == "Other notebooks", x)):
+              lines.extend([f"### {group}", "", "| Notebook | Colab |", "|---|---|"])
+              for path, colab_url in sorted(groups[group], key=lambda item: item[0].name.lower()):
+                  github_path = quote(path.as_posix(), safe="/._-")
+                  lines.append(
+                      f"| [`{path.name}`]({github_path}) | "
+                      f"[Open in Colab]({colab_url}) |"
+                  )
+              lines.append("")
+
+          Path("README.md").write_text("\n".join(lines).rstrip() + "\n", encoding="utf-8")
+
+          requirements = Path("requirements.txt")
+          if not requirements.exists():
+              requirements.write_text("jupyterlab>=4,<5\n", encoding="utf-8")
+
+          print(f"Updated {len(notebooks)} notebooks.")
+          PY
+
+      - name: Commit and push changes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if ! git diff --cached --quiet; then
+            git commit -m "Rename notebooks and add Colab links"
+            git push
+          else
+            echo "No changes to commit."
+          fi
